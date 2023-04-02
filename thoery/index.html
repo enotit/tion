@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>run python in browser!</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="../general/codemirror/lib/codemirror.css" />
+    <link rel="stylesheet" href="../general/codemirror/addon/dialog/dialog.css" />
+    <link rel="stylesheet" href="../general/codemirror/theme/darcula.css" />
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mini-code.css">
+</head>
+
+<body>
+    <div class="main-block">
+        <p> <b> Привет</b>, я версия шаблона 0.0.1Alfa </p>
+        <p> Я твой конспект - Тион. Ты и твои одногруппники будут здесь практиковаться и также смотреть конспекты
+            (да-да, я сам буду писать их за тебя)</p>
+        <p> Это мини-код, обычно здесь просто то что нужно записать - или повторить </p>
+        <div class="mini-code">
+            <div class="panel">
+                <button title="Запуск"> ▶️ </button>
+                <button title="Стоп"> ⛔ </button>
+                <button title="Вернуться к заготовке"> 🔄 </button>
+            </div>
+            <div style="display:flex" class="code-display">
+                <div class="writer">
+                    <textarea id="code" name="code"></textarea>
+                </div>
+                <div style="height:100%;background-color:rgb(226, 226, 226); width: 0.3vw"></div>
+                <textarea id="output" class="output" readonly></textarea>
+            </div>
+            <div class="bottom-panel"></div>
+        </div>
+    </div>
+
+    <script src="../general/codemirror/lib/codemirror.js"></script>
+    <script src="../general/codemirror/mode/python/python.js"></script>
+    <script src="../general/codemirror/addon/search/search.js"></script>
+    <script src="../general/codemirror/addon/search/searchcursor.js"></script>
+    <script src="../general/codemirror/addon/search/jump-to-line.js"></script>
+    <script src="../general/codemirror/addon/dialog/dialog.js"></script>
+    <script src='script.js'></script>
+</body>
+
+</html>
